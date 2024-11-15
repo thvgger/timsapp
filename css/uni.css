@@ -8,8 +8,9 @@ body {
 }
 
 .blacktxt {
-    color: black;
+    color: black !important;
 }
+
 
 .school-container {
     max-width: 800px;
