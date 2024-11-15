@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="arrow" aria-hidden="true">&#9660;</span>
             </div>
             <div id="school-info-${school.id}" class="school-info">
-                <p>${school.description}</p>
+                <p style"color:#000">${school.description}</p>
             </div>
         `;
         schoolList.appendChild(schoolElement);
