@@ -6,6 +6,17 @@ body {
   overflow-x: hidden;
 }
 
+.navbar-logo {
+  margin-right: 20px;
+}
+
+.navbar-logo img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+
+
 .layout_padding {
   padding: 90px 0;
 }
