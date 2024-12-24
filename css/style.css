@@ -10,6 +10,25 @@ body {
   color: #000000 !important;
 }
 
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px 20px;
+  /*background-color: #ffffff;*/
+  background-image: url("whatsapp.png");
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} 
+
+.floating-btn:hover {
+  background-color: #8c8c8c;
+}
+
 .navbar-logo {
   margin-right: 20px;
 }
