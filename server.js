@@ -66,7 +66,7 @@ app.post("/submit-form", async (req, res) => {
       subject: "New Registration Form Submission",
       html: output,
     });
-    res.redirect("/index");
+    res.redirect("/");
   } catch (error) {
     console.error("Error sending email:", error);
     return res.status(500).send("Error sending email");
