@@ -76,14 +76,14 @@
                   <a class="nav-link" href="service.html">Visa Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="why.html">Partners</a>
-                  </li>
+                  <a class="nav-link" href="why.html">Partners</a>
+                </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="registration.html"
                     >Registration <span class="sr-only">(current)</span>
                   </a>
                 </li>
-                
+
                 <!--<li class="nav-item">
                   <a class="nav-link" href="#">
                     <i class="fa fa-user" aria-hidden="true"></i> Login</a
@@ -101,21 +101,28 @@
       </header>
       <!-- end header section -->
 
-      <div class="form-container" style="background-image: url(images/gradient.jpg); background-repeat: no-repeat; background-size: cover;">
-        <form>
+      <div
+        class="form-container"
+        style="
+          background-image: url(images/gradient.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <form action="/submit-form" method="POST">
           <!-- Account Section -->
           <div class="row">
             <h4>Personal Information</h4>
             <div class="input-group input-group-icon">
-              <input type="text" placeholder="Full Name" />
+              <input type="text" name="fullName" placeholder="Full Name" />
               <div class="input-icon"><i class="fa fa-user"></i></div>
             </div>
             <div class="input-group input-group-icon">
-              <input type="email" placeholder="Email Address" />
+              <input type="email" name="email" placeholder="Email Address" />
               <div class="input-icon"><i class="fa fa-envelope"></i></div>
             </div>
             <div class="input-group input-group-icon">
-              <input type="number" placeholder="Phone Number" />
+              <input type="number" name="phone" placeholder="Phone Number" />
               <div class="input-icon"><i class="fa fa-phone"></i></div>
             </div>
           </div>
@@ -126,13 +133,13 @@
               <h4>Date of Birth</h4>
               <div class="input-group">
                 <div class="col-third">
-                  <input type="text" placeholder="DD" />
+                  <input type="text" name="DD" placeholder="DD" />
                 </div>
                 <div class="col-third">
-                  <input type="text" placeholder="MM" />
+                  <input type="text" name="MM" placeholder="MM" />
                 </div>
                 <div class="col-third">
-                  <input type="text" placeholder="YYYY" />
+                  <input type="text" name="YYYY" placeholder="YYYY" />
                 </div>
               </div>
             </div>
@@ -162,14 +169,14 @@
 
             <!-- Nationality -->
             <div class="input-group input-group-icon">
-              <input type="text" placeholder="Nationality" />
+              <input type="text" name="nationality" placeholder="Nationality" />
               <div class="input-icon"><i class="fa fa-globe"></i></div>
             </div>
 
             <!-- Type of Study -->
             <h4>Type of Study</h4>
             <div class="input-group">
-              <select>
+              <select name="studyType">
                 <option value="" disabled selected>Select type</option>
                 <option value="undergraduate">Undergraduate</option>
                 <option value="postgraduate">Postgraduate</option>
@@ -180,7 +187,7 @@
             <!-- Interested Intake -->
             <h4>Interested Intake</h4>
             <div class="input-group">
-              <select>
+              <select name="intake">
                 <option value="" disabled selected>Select intake</option>
                 <option value="spring">Spring</option>
                 <option value="summer">Summer</option>
@@ -191,20 +198,28 @@
 
             <!-- Interested Course -->
             <div class="input-group input-group-icon">
-              <input type="text" placeholder="Interested Course" />
+              <input
+                type="text"
+                name="interestedCourse"
+                placeholder="Interested Course"
+              />
               <div class="input-icon"><i class="fa fa-book"></i></div>
             </div>
 
             <!-- Interested University -->
             <div class="input-group input-group-icon">
-              <input type="text" placeholder="Interested University" />
+              <input
+                type="text"
+                name="interestedUni"
+                placeholder="Interested University"
+              />
               <div class="input-icon"><i class="fa fa-university"></i></div>
             </div>
 
             <!-- Last Academic Qualification -->
             <h4>Last Academic Qualification</h4>
             <div class="input-group">
-              <select>
+              <select name="qualification">
                 <option value="" disabled selected>Select qualification</option>
                 <option value="highschool">High School</option>
                 <option value="bachelor">Bachelor's Degree</option>
@@ -216,7 +231,7 @@
             <!-- English Proficiency -->
             <h4>English Proficiency</h4>
             <div class="input-group">
-              <select>
+              <select name="englishProficiency">
                 <option value="" disabled selected>Select proficiency</option>
                 <option value="ielts">IELTS</option>
                 <option value="none">A-Level</option>
@@ -232,7 +247,9 @@
                 <option value="none">NABTEB</option>
                 <option value="none">Neco</option>
                 <option value="none">MOI</option>
-                <option value="none">West African Examination Council (WAEC)</option>
+                <option value="none">
+                  West African Examination Council (WAEC)
+                </option>
                 <option value="none">Letter Of Proficiency</option>
                 <option value="none">HSE English Waiver (CBSE)</option>
                 <option value="none">None</option>
@@ -241,7 +258,7 @@
 
             <h4>How Did You Hear About Swift Global</h4>
             <div class="input-group">
-              <select>
+              <select name="referralSource">
                 <option value="" disabled selected>Select</option>
                 <option value="ielts">Google</option>
                 <option value="toefl">Facebook</option>
@@ -261,13 +278,18 @@
           <div class="row">
             <h4>Terms and Conditions</h4>
             <div class="input-group">
-              <input id="terms" type="checkbox" />
+              <input id="terms" type="checkbox" name="agreeTerms" value="yes" />
               <label for="terms"
                 >I accept the terms and conditions for signing up to this
                 service, and hereby confirm I have read the privacy
                 policy.</label
               >
             </div>
+          </div>
+
+          <div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            
           </div>
         </form>
       </div>
