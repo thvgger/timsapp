@@ -972,6 +972,7 @@ a:focus {
 .hero-icon a {
   color: white;
   font-size: 15px;
+  gap: 20px;
 }
 
 .hero-icon {
