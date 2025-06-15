@@ -54,8 +54,8 @@ app.post("/submit-form", async (req, res) => {
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "thvgger005@gmail.com", // replace with your email
-      pass: "Thvgger.005", // use app password if 2FA
+      user: "damy84511@gmail.com", // replace with your email
+      pass: "uwdbmxvlszidtxjw", // use app password if 2FA
     },
   });
 
